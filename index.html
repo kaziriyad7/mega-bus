@@ -63,19 +63,21 @@
                 <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" type="number" name="" id="first-class-input">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <p id="first-plus-btn">+</p>
+                    <p id="first-minus-btn">-</p>
                 </div>
             </div>
                 <div class="input-group f-class">
                     <div>
                         <label for="">Economy ($100)</label>
-                        <input class="inp-style inp-width" type="number" name="">
+                        <input class="inp-style inp-width" type="number" name="" id="economy-class-input">
                     </div>
                     <div class="plus-minus-btn">
-                        <p> <span>+</span> <span>-</span> </p>
+                        <p id="economy-plus-btn">+</p>
+                        <p id="economy-minus-btn">-</p>
                     </div>
                 </div>
 
@@ -86,7 +88,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p id="subtotal">$0</p>
                     </div>
                 </div>
 
@@ -95,7 +97,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p id="vat">$0</p>
                     </div>
                 </div>
                 <hr>
@@ -104,15 +106,17 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p id="total">$0</p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" id="booknow-btn">Book Now</button>
+            <div id="success"></div>
         </div>
     </main>
 
     <!--Thank You-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
