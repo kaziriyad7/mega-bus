@@ -121,9 +121,17 @@ economyClassMinusBtn.addEventListener("click", function () {
 
 // Click book now
 bookNowBtnDocument.addEventListener("click", function () {
-    successDocument.innerText = `Your ticket successfully created, please pay $${
+    successDocument.innerText = `Your ticket successfully created, please pay ,$${
         totalFirstClassPrice + totalEconomyClassPrice + vat
     }`;
+    document.getElementById("success").style.color = "magenta";
+    document.getElementById("success").style.border = "1px solid gray";
+    document.getElementById("success").style.marginBlockStart = "20px";
+    document.getElementById("success").style.padding = "10px";
+    document.getElementById("success").style.backgroundColor = "lightblue";
+    document.getElementById("success").style.boxShadow = "3px 4px 8px green";
+
+
 });
 
 // Function for calculate the price
